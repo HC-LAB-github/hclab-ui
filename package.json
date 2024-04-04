@@ -2,6 +2,7 @@
   "name": "hc-design",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@8.15.4",
   "description": "vue3 design system",
   "scripts": {
     "dev": "vite",
