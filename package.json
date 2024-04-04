@@ -1,7 +1,7 @@
 {
   "name": "hclab-ui",
   "type": "module",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "packageManager": "pnpm@8.15.6",
   "description": "vue3 design system",
   "author": "ileostar <hi@leostar.top> (https://github.com/ileostar)",
@@ -21,7 +21,7 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
+      "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
   },
