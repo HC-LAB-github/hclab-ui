@@ -2,11 +2,36 @@
   "name": "hc-design",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@8.15.4",
+  "packageManager": "pnpm@8.15.6",
   "description": "vue3 design system",
+  "homepage": "https://github.com/hc-lab-github/hc-design",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hc-lab-github/hc-design.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hc-lab-github/hc-design/issues"
+  },
+  "keywords": [
+    "vue3",
+    "ui library",
+    "hclab"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
@@ -15,15 +40,27 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "plop": "plop"
+    "release": "bumpp --commit --push --tag && npm publish",
+    "plop": "plop",
+    "up": "taze major -I"
+  },
+  "dependencies": {
+    "bumpp": "9.4.0",
+    "unocss": "0.59.0-beta.1",
+    "vue": "^3.4.21"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.12.1",
     "@vitest/ui": "^1.4.0",
     "plop": "^4.0.1",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0",
+    "taze": "^0.13.3",
+    "typescript": "^5.4.3",
+    "vite-plugin-dts": "^3.8.1",
     "vitepress": "^1.0.2",
     "vitest": "^1.4.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
 }

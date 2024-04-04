@@ -19,5 +19,9 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": ["src", "internal/tenplate/index.spec.ts"]
+  "include": [
+    "src",
+    "internal/tenplate/index.spec.ts",
+    "src/components/**/*.vue"
+  ]
 }

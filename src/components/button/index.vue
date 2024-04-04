@@ -1,13 +1,5 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div>
-    button
-  </div>
+  <button style="color: red">
+    <slot />
+  </button>
 </template>
-
-<style lang="scss" scoped>
-
-</style>
